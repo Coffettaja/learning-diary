@@ -3,20 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>Luentopäiväkirja</title>
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
 
 <header>
-	<strong>Luentopäiväkirja</strong>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-			<li><a href="{{site.baseurl}}/entries.html">Päivät</a></li>
-		</ul>
-	</nav>
+	<h1>Luentopäiväkirja</h1>
+	{% include nav.html %}
 </header>
 	
 {{content}}
+
+{% include nav.html %}
 
 </body>
 </html>

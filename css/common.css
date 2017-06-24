@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: red;
+}
+
+.current {
+	background-color: #000531;
+	color: white;
+}

@@ -11,3 +11,15 @@ h1 {
 	background-color: #000531;
 	color: white;
 }
+
+.nav {
+	list-style-type: none;
+}
+
+.nav > li {
+	display: inline-block;
+}
+
+.nav-top {
+	font-size: 1.5em;
+}

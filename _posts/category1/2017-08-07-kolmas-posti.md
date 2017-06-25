@@ -1,10 +1,11 @@
 ---
-title: testiposti2
-meta: hulihulihuli
+title: testiposti3333
+meta: hheliheliheli
 category: category1
+layout: posts
 ---
 
-## Test pwattttost pls ignore ##
+## Test post EN TAJUU ignore ##
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

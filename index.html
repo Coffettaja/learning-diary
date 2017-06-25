@@ -10,13 +10,3 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <h2>Lue tästä</h2>
 
-<div>
-	<ul> <!-- Can add limit to loops with limit:X -->
-		{% for post in site.categories.category1 %} 
-			<li>
-				<a href="#">{{post.title}}</a>
-				<p>{{post.meta}}</p>
-			</li>
-		{% endfor %}
-	</ul>
-</div>

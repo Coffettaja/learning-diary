@@ -10,3 +10,12 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <h2>Lue tästä</h2>
 
+<ol type="i">
+	{% for juttu in site.data.test-data %}
+		<li>
+			<strong>{{juttu.title}}</strong>
+			{{juttu.content | markdownify}}
+		</li>
+	{% endfor %}
+</ol>
+

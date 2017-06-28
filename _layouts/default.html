@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Luentopäiväkirja</title>
-	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
-</head>
+
+{% include head.html %}
+
 <body>
 
 <header>
@@ -15,7 +12,5 @@
 	<main>
 		{{content}}
 	</main>
-{% include nav.html navclass='nav-bottom' %}
-
 </body>
 </html>

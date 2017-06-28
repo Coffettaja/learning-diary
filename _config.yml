@@ -1,2 +1,11 @@
+
+# Permalinks
+# permalink: pretty
+permalink: /:title/
+
+# Setup
 baseurl: /learning-diary
+title: Luentopäiväkirja
+tagline: Ohjelmistoturvallisuus-kurssin luentopäiväkirja.
 exclude: ['README.md']
+include: ['_pages']

@@ -1,19 +1,16 @@
----
+<!DOCTYPE html>
+<html lang="fi">
 
----
+{% include head.html %}
 
+<body>
+	<a href="{{site.baseurl}}">Aloitussivulle</a>
+	<article>
+		<h2>{{page.title}}</h2>
+		{{content}}
+	</article>
 
-<a href="{{site.baseurl}}">Aloitussivulle</a>
-<div>
-	<h2>{{page.title}}</h2>
-	{{content}}
-</div>
-
-<nav class='pages-nav'>
-	{% if page.previous.url %}
-		<a class="prev" href="{{page.previous.url}}">Edellinen luento</a>
-	{% endif %}
-	{% if page.next.url %}
-	<a class="next" href="{{page.next.url}}">Seuraava luento</a>
-	{% endif %}
-</nav>
+{% include pages-nav.html %}
+	
+</body>
+</html>

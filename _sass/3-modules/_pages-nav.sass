@@ -1,15 +1,39 @@
 .pages-nav
 	font-size: 14px
 	display: block
-	width: auto
+	width: 100%
+	position: absolute
+	bottom: 0
 	overflow: hidden
-	background-color: red
+	background-color: #3a7d93
 
 	a
 		display: block
-		width: 50%
+		width: 35%
 		float: left
 		margin: 1em 0
+		padding-left: 15%
+		opacity: 0.6
+		visibility: hidden
+	
+	a.active
+		color: #fff
+		opacity: 1
+		visibility: visible
+
+		
 
 	.next
 		text-align: right
+		padding-left: 0
+		padding-right: 15%
+
+
+article
+	display: block
+	width: 70%
+	margin: auto
+	font-family: "Questrial", sans-serif
+	font-style: normal
+	font-weight: 400
+	font-size: 17px

@@ -4,13 +4,13 @@
 {% include head.html %}
 
 <body>
-	<a href="{{site.baseurl}}/">Aloitussivulle</a>
+{% include pages-nav.html posclass="top-nav" %}
 	<article>
 		<h2>{{page.title}}</h2>
 		{{content}}
 	</article>
 
-{% include pages-nav.html %}
+{% include pages-nav.html posclass="bottom-nav" %}
 	
 </body>
 </html>

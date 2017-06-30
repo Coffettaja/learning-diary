@@ -1,39 +1,40 @@
 .pages-nav
 	font-size: 14px
-	display: block
+	display: flex
+	justify-content: space-between
 	width: 100%
 	position: absolute
 	bottom: 0
+	right: 0
+	left: 0
 	overflow: hidden
 	background-color: #3a7d93
 
 	a
 		display: block
-		width: 35%
+		width: auto
 		float: left
 		margin: 1em 0
-		padding-left: 15%
-		opacity: 0.6
+		margin-left: 15%
+		text-align: center
 		visibility: hidden
+		font-weight: 700
+		font-size: 1.2em
+		color: #fff
 	
 	a.active
-		color: #fff
-		opacity: 1
 		visibility: visible
-
-		
 
 	.next
 		text-align: right
-		padding-left: 0
-		padding-right: 15%
+		margin-left: 0
+		margin-right: 15%
 
 
 article
 	display: block
 	width: 70%
 	margin: auto
-	font-family: "Questrial", sans-serif
-	font-style: normal
+	margin-bottom: 30px
 	font-weight: 400
 	font-size: 17px

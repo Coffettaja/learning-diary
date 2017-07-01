@@ -1,9 +1,9 @@
 <nav class='pages-nav {{include.posclass}}'>
 	
-	<a class="prev {% if page.next.url %} active {% endif %}" href="{{page.next.url}}">Edellinen luento</a>
+	<a class="prev {% if page.next.url %} active {% endif %}" href="{{site.baseurl}}{{page.next.url}}">Edellinen luento</a>
 	
 	<a id="home" href="{{site.baseurl}}/">Kotiin</a>
 
-	<a class="next {% if page.previous.url %} active {% endif %}" href="{{page.previous.url}}">Seuraava luento</a>
+	<a class="next {% if page.previous.url %} active {% endif %}" href="{{site.baseurl}}{{page.previous.url}}">Seuraava luento</a>
 	
 </nav>

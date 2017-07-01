@@ -4,13 +4,13 @@
 {% include head.html %}
 
 <body>
-{% include pages-nav.html posclass="top-nav" %}
-	<article>
-		<h2>{{page.title}}</h2>
-		{{content}}
-	</article>
-
-{% include pages-nav.html posclass="bottom-nav" %}
-	
+<div class="posts-div">
+	{% include pages-nav.html posclass="top-nav" %}
+		<article>
+			<h2>{{page.title}}</h2>
+			{{content}}
+		</article>
+	{% include pages-nav.html posclass="bottom-nav" %}
+</div>
 </body>
 </html>

@@ -14,7 +14,7 @@
 		width: auto
 		margin: 0.5em 0
 		margin-left: 15%
-		padding: 5px
+		padding: 4px
 		text-align: center
 		visibility: hidden
 		font-weight: 700
@@ -23,15 +23,27 @@
 	
 	a.active
 		visibility: visible
+		+hide-text
+		background-image: url(../_icons/arrowleft.svg)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
 
-	.next
+	a.next
 		text-align: right
 		margin-left: 0
 		margin-right: 15%
+		background-image: url(../_icons/arrowright.svg)
 
 	#home
 		margin-left: 0
 		visibility: visible
+		+hide-text
+		background-image: url(../_icons/homeicon.svg)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+
 
 .bottom-nav
 	bottom: 0
@@ -39,6 +51,16 @@
 .top-nav
 	position: fixed
 	top: 0
+
+
+@media (max-width: $breakpoint-tablet)
+	.pages-nav
+		a
+			margin-left: 5%
+	
+		a.next
+			margin-left: 0
+			margin-right: 5%
 	
 
 

@@ -8,4 +8,4 @@ baseurl: /learning-diary
 title: Luentopäiväkirja
 tagline: Ohjelmistoturvallisuus-kurssin luentopäiväkirja.
 exclude: ['README.md']
-include: ['_pages']
+include: ['_pages','_icons']

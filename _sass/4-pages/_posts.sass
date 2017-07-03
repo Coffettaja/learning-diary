@@ -18,10 +18,24 @@ article
 
 .posts-div
 	position: relative
-	align-items: stretch
+	// align-items: stretch
 
 	h2
 		margin: 0 0 20px 0
 
 	h3
 		margin: 40px 0 15px 0
+
+@media (max-width: $breakpoint-tablet)
+	article
+		width: 90%
+
+@media (max-width: $breakpoint-phone)
+	article
+		width: 95%
+
+	h2
+		font-size: 36px
+
+	h3
+		font-size: 24px

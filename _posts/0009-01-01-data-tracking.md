@@ -15,7 +15,7 @@ Naiivi ratkaisu sensitiivisen datan vuotamista vastaan on, että laitteelle ei
 asennettaisi appeja, joilla on valtuudet sekä dataan että verkkoon. Tämä kuitenkin estäisi esimerkiksi sähköposti-appien käytön. Lisäksi
 ratkaisu ei estäisi tapauksia, joissa useampi appi eri valtuuksilla toimii yhteystyössä. 
 Toimivampi ratkaisu on sensitiivisen datan jäljittäminen ja sen käytön estäminen 
-verkkokutsujen parametreina. Android-älypuhelimien tapauksessa tähän voidaan käyttää
+verkko&shy;kutsujen parametreina. Android-äly&shy;puhelimien tapauksessa tähän voidaan käyttää
 TaintDroid-systeemiä.
 
 TaintDroid perustuu sensitiiviseen dataan liittyvien tekijöiden merkkaamiseen 
@@ -38,7 +38,7 @@ osaa käsitellä oikein tilanteita, joissa jonkin muuttujan arvo riippuu epäsuo
 merkatusta muuttujasta, esimerkiksi kun merkattu muuttuja on if-lauseen ehtona ja
 toinen muuttuja asetetaan if-lauseen sisällä.
 
-TaintDroidin käyttö aiheuttaa suhteellisen pienet kustannukset suorituskyvylle. *Taint*-
+TaintDroidin käyttö aiheuttaa suhteellisen pienet kustannukset suoritus&shy;kyvylle. *Taint*-
 merkkien tallentaminen aiheuttaa n. 3-5% kustannuksen muistille. Toisaalta *taintin*
 levittäminen voi aiheuttaa lähes 30% kustannuksia CPU:lle, mikä puolestaan voi
 huomattavasti alentaa laitteen akkukestoa.
@@ -48,20 +48,20 @@ systeemeissä. Kuitenkin x86-tasolla jäljittäminen on raskasta ja lisäksi
 on vaara *taintin* räjähdysmäiselle leviämiselle, mikäli esimerkiksi *stack
 pointteri* merkataan saastuneeksi. Vanhojen C ja C++ -ohjelmien tapauksessa
 *tainttia* voidaan jäljittää TightLip-systeemillä. TightLip hyödyntää ns.
-kaksoisolentoprosesseja, mikä mahdollistaa datan vuotamisen jäljittämisen
+kaksoisolento&shy;prosesseja, mikä mahdollistaa datan vuotamisen jäljittämisen
 *taintin* avulla myös silloin, kun alkuperäistä systeemiä ei voida muokata
-lainkaan. Kaksoisolentoprosessi on hyvin samanlainen kuin alkuperäinen, mutta
+lainkaan. Kaksoisolento&shy;prosessi on hyvin samanlainen kuin alkuperäinen, mutta
 se ei koske sensitiiviseen dataan. Mikäli nämä kaksi prosessia siitä huolimatta kutsuvat
 samoja systeemikutsuja samoilla argumenteillä, voidaan päätellä, että alkuperäinen
 prosessi ei tarvitse toimiakseen sensitiivistä dataa.
 
 ### Ajatuksia materiaalista
 
-Sensitiivisen datan jäljittäminen mobiililaitteilla on varsin mielenkiintoinen aihe.
+Sensitiivisen datan jäljittäminen mobiili&shy;laitteilla on varsin mielenkiintoinen aihe.
 Itse olen aina ollut vastentahtoinen sallimaan erinäisten appien käyttää laitteeni
 dataa, varsinkin kun monesti ei ole selkeää, mihin appi tarvitsee tätä. Olikin
 yllättävää lukea, että jopa yli puolet satunnaisesti valituista apeista käytti
 dataa jotenkin väärin. Ei taida vielä nykyäänkään olla Android-laitteissa oletuksena
 käytössä jotain sensitiivisen datan kulkua tarkkailevaa systeemiä. En ainakaan
 ole koskaan saanut esimerkiksi huomautusta puhelimeltani, että dataa käytettäisiin
-väärin, vaikka väärinkäyttö vaikuttaisi olevan varsin yleistä. 
+väärin, vaikka väärin&shy;käyttö vaikuttaisi olevan varsin yleistä. 
